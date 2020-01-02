@@ -1,0 +1,526 @@
+@font-face{
+    font-family:"yanone";
+    src: url(../css/fonts/yanone.ttf)
+}
+
+
+@font-face{
+    font-family:"finger";
+    src: url(../css/fonts/finger.ttf)
+}
+
+@font-face{
+    font-family:"yeong";
+    src: url(../css/fonts/yeongSung.ttf)
+}
+
+
+/*Generales*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   
+    font-family: yanone;
+    font-size:20px;
+    background:url(../img/pattern.png);
+    background-attachment: fixed;
+}
+
+.clearfix{
+    float:none;
+    clear: both;
+}
+
+/*barra de navegación*/
+
+
+header{
+    display: blocK;
+    width:75%;
+    height:90px;
+    background: rgba(53, 103, 164, 0.8);
+    margin:0 auto;
+    text-transform: uppercase;
+}
+
+header ul{
+    display:block;
+    width:50%;
+    height: inherit;
+    margin:0px auto;
+    margin-top: -3px;
+
+}
+header ul li{
+    display: inline-block;
+    margin:0px auto;
+    text-align: center;
+    line-height: 88px;
+}
+
+header ul li a{
+
+    display:block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color:white;
+    transition: all 300ms;
+}
+header ul li a:hover, .actived{
+    background:rgba(0, 0, 0, 0.8)
+}
+
+
+
+#logo{
+    font-family: finger;
+    font-size: 30px;
+}
+
+#logo a{
+    transition: color 500ms, transform 500ms;
+    
+ }
+
+header #logo a:hover{
+    background:transparent;
+    color:black;
+    transform: scale(1.50, 1.50);
+}
+
+/*Contenendor principal */
+
+
+#content{
+    width:75%;
+    margin:0 auto;
+    box-shadow: 0px 0px 40px black;
+    background: rgba(255,255,255,0.7);
+    min-height: 700px;
+    padding-top:60px;
+    border-left:1px solid #b7b7b7;
+    border-right:1px solid #b7b7b7;
+}
+
+/*Pie de pagina */
+
+footer{
+    width:75%;
+    margin: 0 auto;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*About*/
+
+#title{
+    width:70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:7  0px;
+    margin-top:10px;
+}
+
+#title h1{
+    font-family: "yeong";
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom:5px;
+}
+
+#title h2{
+    color:rgba(3, 106, 255);
+    font-size: 25px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.about{
+    width:70%;
+    margin:0 auto;
+    margin-bottom:20px;
+    font-size:23px;
+}
+
+.about h2{
+    border-bottom:1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p{
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align:justify;
+}
+
+/*Estilos para el formulario*/
+
+.container{
+    padding:50px;
+    padding-top:10px;
+}
+.container img{
+   float: left;
+   width: 40%;
+}
+.container .data{
+    float: left;
+    width: 49%;
+    margin-left:35px;
+ }
+
+.container h2 {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom:10px;
+    margin-bottom:15px;
+}
+
+form{
+    width:80%;
+}
+
+form label{
+    width:100%;
+    display: block;
+    margin-top:10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea,
+.button-edit,
+.button-delete{
+
+width:40%;
+padding: 5px;
+
+}
+.button-edit,
+.button-delete{
+    width:20%;
+    float:left;
+    color:white;
+    background:rgba(53, 103, 164, 1);
+    border: 1px solid rgba(16, 67, 130,1);
+    cursor:pointer;
+    margin-left:10px;
+    margin-top:20px;
+    text-decoration: none;
+}
+
+.button-edit{
+    background:orange;
+}
+.button-delete{
+    background:red;
+    border:1px solid black;
+}
+form input[type="submit"]{
+    font-size: 17px;
+    display: block;
+    padding:10px;
+    margin-top:15px;
+    color:white;
+    background:rgba(53, 103, 164, 1);
+    border: 1px solid rgba(16, 67, 130,1);
+    cursor:pointer;
+
+}
+
+form input[type="submit"]:hover{
+    
+    background:rgba(53, 103, 164, 0.8);
+    border: 1px solid rgba(16, 67, 130,1);
+}
+
+form input[disabled]{
+    
+    background:rgba(53, 103, 164, 0.6);
+    cursor:not-allowed
+}
+
+form textarea{
+
+    max-height:200px;
+    max-width: 900px;
+    
+    }
+
+.form_error{
+    
+    font-size: 16px;
+    padding: 5px;
+    background:rgba(222, 43, 3,1);
+    color:white;
+    margin-left:5px;
+    border:1.5px solid rgba(161, 33, 5 ,1);
+}
+
+.message{
+    padding: 5px;
+    border: 1px solid #eee;
+    width:50%;
+    
+
+}
+.success{
+    color:green;
+}
+.failed{
+    color:red;
+}
+
+
+.project{
+    list-style: none;
+    display:block;
+    float:left;
+    width:28%;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:30px;
+
+}
+
+.project .image{
+    width:100%;
+    height:150px;
+    overflow:hidden;
+}
+.project img{
+    width: 100%;
+   
+
+}
+
+.project a {
+    text-decoration: none;
+    color:black;
+}
+
+#imgProfile{
+
+    width:20%;
+    height:30%;
+    float: left;
+    margin-right:5%;
+}
+#imgProfileCel{
+
+    display:none;
+}
+.languajes{
+    margin-left: 30px;
+}
+.contact_h3 h3{
+    float:left;
+}
+#menu_cel{
+    display:none;
+}
+
+.icon-menu{
+    display:none;
+}
+
+/* Para celular y un poco de tablets*/
+
+@media only screen and (max-device-width: 680px) {
+    
+    /*''''''''''''''''''''''''''''''''''''''''''Header and About styles''''''''''''''''''''''''''''''''''''''''''*/
+
+    body{
+        background:white;
+    }
+
+    header{
+        width:100%;
+        height:50px;
+        margin-top:-3px;
+        
+        
+    }
+
+    #content{
+        width:100%;
+        padding-top:10px;
+    }
+
+    
+
+    #title h1{
+        font-size:37px;
+    }
+
+    #imgProfile{
+        display:none;
+    }
+    #imgProfileCel{
+        display:block;
+        width:150px;
+        height:150px;
+        margin:0 auto;
+    }
+    .about h2{
+        text-align: center;
+        margin-top:20px;
+    }
+    /*''''''''''''''''''''''''''''''''''''''''''Menu styles''''''''''''''''''''''''''''''''''''''''''*/
+
+    
+header ul{
+    display:block;
+    width:70%;
+    
+    background:black;
+    z-index: 1;
+    position: absolute;
+    top:45px;
+    left:15%;
+    
+}
+header ul li{
+    display:block;
+   
+    text-align: center;
+    line-height: 50px;
+    z-index: 1;
+}
+
+header ul li a{
+    background:black;
+    display:block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color:white;
+    transition: all 0ms;
+    z-index: 1;
+}
+header ul li a:hover, .actived{
+    background:rgba(0, 0, 0, 0.8)
+}
+
+.icon-menu{
+    display:block;
+    color:white;
+    font-size:25px;
+    position: absolute;
+    top:10px;
+    left:90%;
+}
+#menu_pc{
+    display:none;
+}
+#menu_cel{
+    display:block;
+}
+
+/*''''''''''''''''''''''''''''''''''''''''''Create Project Styles''''''''''''''''''''''''''''''''''''''''''*/
+
+ #form_create{
+    margin: 0 auto;
+ }
+ #form_create input{
+    width:100%;
+    
+ }
+ #form_create textarea{
+    width:100%;
+    
+    
+ }
+ .container{
+     padding:20px;
+ }
+ .container h2{
+    text-align: center;
+}
+
+/*''''''''''''''''''''''''''''''''''''''''''Contact form Styles''''''''''''''''''''''''''''''''''''''''''*/
+
+
+#contact_form{
+    margin: 0 auto;
+ }
+#contact_form input{
+    width:100%;
+    
+ }
+#contact_form textarea{
+    width:100%;
+    
+    
+ }
+ /*''''''''''''''''''''''''''''''''''''''''''Projects Styles''''''''''''''''''''''''''''''''''''''''''*/
+
+
+ .project{
+    width:80%;
+    
+ }
+ .project h3{
+    text-align:center;
+ }
+ .project p{
+     text-align: center;
+ }
+
+ /*''''''''''''''''''''''''''''''''''''''''''Projects Edit''''''''''''''''''''''''''''''''''''''''''*/
+
+.image img{
+     width:100%;
+     height:100%;
+     margin-bottom:10px;
+}
+#content{
+    box-shadow:none;
+}
+.container{
+    background:#eee;
+    box-shadow: none;
+}
+.container .data {
+    float: none;
+    width: 49%;
+    margin:0 auto;
+}
+
+.container .data h1{
+    text-align: center;
+    color:rgba(53, 103, 164, 0.8);
+    margin-top:10px;
+}
+
+.container .data h3{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.container .data p{
+    text-align: center;
+    
+   
+}
+.button-edit,.button-delete{
+    width:100%;
+    text-align:center;
+    padding:0px;
+    margin:10px;
+    
+}
+
+
+ }
